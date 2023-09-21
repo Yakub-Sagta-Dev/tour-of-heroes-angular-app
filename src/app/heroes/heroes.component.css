@@ -7,30 +7,33 @@
 }
 
 .heroes li {
-  display: flex;
-}
-
-.heroes button {
-  flex: 1;
-  cursor: pointer;
+  /* display: flex; */
   position: relative;
-  left: 0;
-  background-color: #eee;
-  margin: 0.5em;
-  padding: 0;
-  border-radius: 4px;
-  display: flex;
-  align-items: stretch;
-  height: 1.8rem;
+  cursor: pointer;
 }
 
-.heroes button:hover {
-  color: #2c3a41;
-  background-color: #e6e6e6;
+.heroes li:hover {
   left: 0.1em;
 }
 
-.heroes button:active {
+.heroes a {
+  color: #333;
+  text-decoration: none;
+  background-color: #eee;
+  margin: 0.5em;
+  padding: 0.3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+}
+
+.heroes a:hover {
+  color: #2c3a41;
+  background-color: #e6e6e6;
+}
+
+.heroes a:active {
   background-color: #525252;
   color: #fafafa;
 }
@@ -40,11 +43,11 @@
   color: white;
 }
 
-.heroes button.selected:hover {
+.heroes a.selected:hover {
   background-color: #505050;
   color: white;
 }
-.heroes button.selected:active {
+.heroes a.selected:active {
   background-color: white;
   color: white;
 }
@@ -56,10 +59,17 @@
   padding: 0.8em 0.7em 0 0.7em;
   background-color: #405061;
   line-height: 1em;
+
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  min-width: 16px;
+  text-align: right;
   margin-right: 0.8em;
   border-radius: 4px 0 0 4px;
 }
 
 .heroes .name {
-  align-self: center;
+  /* align-self: center; */
 }
